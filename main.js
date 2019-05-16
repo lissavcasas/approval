@@ -1,20 +1,18 @@
 const approval = document.getElementById('Form5cdc4d64ce3ce_approval_request_edit');
 const status = document.getElementById('Form5cdd81fb61c35_status_edit');
 
-const checkLabel = (arr, boolean) => {
-  console.log(boolean, 'es t o f'); //cuando le da check es true
-  const arrElements = Object.values(arr.children);
-  arrElements.forEach(option => {
-    console.log(option, 'option'); // es cada option
-    
-    /* if (boolean === 'true') {
-      console.log('el estado cambia a en aprobacion');
-     }   */  
-  });
-
+const checkLabel = (select, boolean) => {
+  const option = select.options;
+  if (boolean) {
+    option[2].selected = true
+  } else {
+    option[1].selected = true
+  }
+  return boolean
 }
 
 approval.addEventListener('change', () => {
   checkLabel(status, approval.checked)
 })
+
 
