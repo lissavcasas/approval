@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Demo</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+
+      <!-- APPROVAL -->
+      <fieldset class="col-md-12">
+        <legend>
+          Flujo Aprobacion
+        </legend>
+
+        <div class="row">
+          <div class="form-group col-sm-12" style="display: block;">
+            <label class="control-label" for="" data-column="APPROVAL_REQUEST">
+              Solicitar Aprobación
+
+              <span class="required-mark" style="display: none">*</span>
+              <div class="pgui-field-options btn-group btn-group-xs btn-group-justified" data-toggle="buttons">
+
+              </div>
+            </label>
+            <div class="col-input" style="width:100%;max-width:100%" data-column="APPROVAL_REQUEST">
+              <div class="input-checkbox">
+
+                <input id="Form5cdc4d64ce3ce_approval_request_edit" name="approval_request_edit" data-editor="checkbox"
+                  data-field-name="APPROVAL_REQUEST" data-legacy-field-name="APPROVAL_REQUEST"
+                  data-pgui-legacy-validate="true" type="checkbox" value="on">
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </fieldset>
+
+      <!-- STATUS -->
+      <div class="form-group col-sm-6">
+        <label class="control-label" for="" data-column="STATUS">
+          Estado
+
+          <span class="required-mark" style="display: none">*</span>
+          <div class="pgui-field-options btn-group btn-group-xs btn-group-justified" data-toggle="buttons">
+
+          </div>
+        </label>
+
+        <div class="col-input" style="width:100%;max-width:100%" data-column="STATUS">
+          <select class="form-control " id="Form5cdd81fb61c35_status_edit" name="status_edit" data-editor="combobox"
+            data-field-name="STATUS" data-legacy-field-name="STATUS" data-pgui-legacy-validate="true">
+            <!-- disabled -->
+            <option value="" disabled="disabled">Por favor seleccione...</option>
+            <option value="0" selected>En proceso</option> <!-- selected="true" -->
+            <option value="20">En Aprobacion</option>
+            <option value="25">Rechazado</option>
+            <option value="30">Aprobado</option>
+          </select>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prototype/1.7.3/prototype.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
